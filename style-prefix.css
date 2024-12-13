@@ -1,24 +1,6 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
 
-/**
- * copyright 2022 @codewithsadee 
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
-
-  /**
-   * colors
-   */
 
   --spanish-gray: hsl(0, 0%, 60%);
   --sonic-silver: hsl(0, 0%, 47%);
@@ -31,10 +13,6 @@
   --cultured: hsl(0, 0%, 93%);
   --white: hsl(0, 100%, 100%);
   --onyx: hsl(0, 0%, 27%);
-
-  /**
-   * typography
-   */
 
   --fs-1: 1.563rem;
   --fs-2: 1.375rem;
@@ -54,30 +32,18 @@
   --weight-600: 600;
   --weight-700: 700;
 
-  /**
-   * border-radius
-   */
+ 
 
   --border-radius-md: 10px;
   --border-radius-sm: 5px;
 
-  /**
-   * transition 
-   */
 
   --transition-timing: 0.2s ease;
 
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
-
-*, *::before, *::after {
+ *::before, *::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -123,10 +89,6 @@ input::placeholder { font: inherit; }
 
 body { background: var(--white); }
 
-/**
- * scrollbar style
- */
-
 body::-webkit-scrollbar { width: 15px; }
 
 body::-webkit-scrollbar-track {
@@ -142,14 +104,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
-
-
-
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
 .container { padding: 0 15px; }
 
@@ -182,18 +136,6 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   margin-bottom: 30px;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #MAIN
-\*-----------------------------------*/
-
-/**
- * overlay 
- */
-
 .overlay {
   position: fixed;
   top: 0;
@@ -213,12 +155,6 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   opacity: 1;
   pointer-events: all;
 }
-
-
-
-/**
- * MODAL 
- */
 
 .modal {
   position: fixed;
@@ -380,14 +316,6 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .btn-newsletter:hover { background: var(--salmon-pink); }
-
-
-
-
-
-/**
- * NOTIFICATION TOAST 
- */
 
 .notification-toast {
   position: fixed;
@@ -3049,66 +2977,20 @@ footer {
   .footer-bottom { margin-bottom: 0; }
 
 }
-
-
-
-
-
-/**
- * responsive larger than 1200px screen
- */
-
 @media (min-width: 1200px) {
 
-  /**
-   * #REUSED STYLE 
-   */
-
   .container { max-width: 1200px; }
-
-
-
-  /**
-   * #HEADER
-   */
-
   .desktop-menu-category-list { gap: 45px; }
 
-
-
-  /**
-   * #BANNER
-   */
-
   .slider-item:last-child .banner-img { -o-object-position: top; object-position: top; }
-
-
-
-  /**
-   * #CATEGORY
-   */
-
   .category-item { min-width: -webkit-calc(25% - 22.5px); min-width: calc(25% - 22.5px); }
 
   .category-item-title { --fs-9: 0.824rem; }
-
-
-
-  /**
-   * #PRODUCT
-   */
-
   .product-featured .showcase > div { min-width: -webkit-calc(50% - 10px); min-width: calc(50% - 10px); }
 
   .product-featured .display-number { --fs-5: 1.125rem; }
 
   .product-grid { -ms-grid-columns: (1fr)[4]; grid-template-columns: repeat(4, 1fr); }
-
-
-
-  /**
-   * #TESTIMONIALS, CTA, SERVICE
-   */
 
   .testimonial, .service {
     min-width: -webkit-calc(25% - 20px);
@@ -3143,22 +3025,9 @@ footer {
     text-align: left;
   }
 
-
-
-  /**
-   * #BLOG
-   */
-
   .blog { margin-bottom: 50px; }
   
   .blog-card { min-width: -webkit-calc(25% - 22.5px); min-width: calc(25% - 22.5px); }
-
-
-
-  /**
-   * #FOOTER
-   */
-
   footer { padding-top: 50px; }
 
   .footer-category {
@@ -3169,36 +3038,11 @@ footer {
   .footer-nav { padding-bottom: 50px; }
 
 }
-
-
-
-
-
-/**
- * responsive larger than 1400px screen
- */
-
 @media (min-width: 1400px) {
-
-  /**
-   * #BASE 
-   */
 
   html { font-size: 18px; }
 
-
-
-  /**
-   * #REUSED STYLE 
-   */
-
   .container { max-width: 1350px; }
-
-
-
-  /**
-   * #BANNER
-   */
 
   .slider-item { height: 450px; }
 
